@@ -1,0 +1,55 @@
+body {
+    background-color: #131200;
+}
+#bo_container {
+    overflow-y: scroll;
+}
+#bo_container .trigger {
+    /*width: 50px;*/
+    color: white;
+    font-weight: bold;
+}
+#bo_container .notes {
+    /*width: 50px;*/
+    color: white;
+    font-weight: bold;
+}
+#bo_container .bo_unit {
+    /*width: 200px;*/
+    height: auto;
+    border:  1px solid black;
+    background-color: #9CAEA9;
+}
+#bo_headers {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    border-radius: 4px;
+    background-color: #175676 !important;
+}
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the bottom of the page */
+  width: 100%; /* Full width */
+}
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+.btn_action_category {
+    display: inline-block;
+    vertical-align: top;
+}
+.action_grid {
+    width: 70px; 
+    height: 70px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+.build_metadata {
+    color: white;
+}

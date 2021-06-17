@@ -1,0 +1,155 @@
+ <!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+<script src="./main.js"></script> 
+<body onload="add_bo_unit();">
+
+<!-- Header -->
+<div class="container"> 
+    <div class="row">
+        <div class="col-xl-6 build_metadata">Title:</div>
+        <div class="col-xl-2 build_metadata" id="bo_race">Race: Zerg</div>
+        <div class="col-xl-2 build_metadata">Save</div>
+        <div class="col-xl-2 build_metadata">Import/Export</div> 
+    </div>
+</div>
+
+<!-- Race selector -->
+<div> 
+    <button onclick="select_race(this)"><img id="terran" src="./icons/r_terran.PNG" width="43" height="68"></button>
+    <button onclick="select_race(this)"><img id="zerg" src="./icons/r_zerg.PNG" width="43" height="68"></button>
+    <button onclick="select_race(this)"><img id="protoss" src="./icons/r_protoss.PNG" width="43" height="68"></button>
+</div>
+
+
+
+<!-- BO Container -->
+<div id="bo_container">
+    <div class="container" id="bo_headers"> <!--Table Headers-->
+        <div class="row" style="border: 1px solid red;">
+            <div class="col-xl-1">
+                Trigger
+            </div>
+            
+            <div class="col-xl-5">
+                Action(s)
+                <img id="action">
+            </div>
+            
+            <div class="col-xl-4">
+                Notes
+            </div> 
+            <div class="col-xl-1">
+                Delete
+            </div>
+
+            <div class="col-xl-1">
+                Insert
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <button onclick="add_bo_unit()">Add a Step</button>
+    </div>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+    <p>&nbsp</p>
+</div>
+
+<!-- Action Selector -->
+
+
+<div class="navbar">
+    <div class="container">
+        <div class="row" style="width:100%;">
+            <div id="action_category_selector" class="col-4">
+                <button class="btn_action_category" onclick="set_action_category('structure')"><img src="./icons/structure.PNG" width="140" height="140"></button>
+                <button class="btn_action_category" onclick="set_action_category('unit')"><img src="./icons/unit.PNG" width="140" height="140"></button>
+                <button class="btn_action_category" onclick="set_action_category('upgrade')"><img src="./icons/upgrade.PNG" width="140" height="140"></button>
+                <button class="btn_action_category" onclick="set_action_category('misc')"><img src="./icons/misc.PNG" width="140" height="140"></button>
+            </div>
+            <div id="action_selector_grid" class="col-6">
+                <div class="container">
+                    <div class="row">
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_0_0" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_1_0" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_2_0" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_3_0" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_4_0" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_5_0" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_6_0" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_7_0" src="./icons/drone.PNG" width="70" height="70"></button>
+                    </div>
+                    <div class="row">
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_0_1" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_1_1" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_2_1" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_3_1" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_4_1" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_5_1" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_6_1" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_7_1" src="./icons/drone.PNG" width="70" height="70"></button>
+                    </div>
+                    <div class="row">
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_0_2" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_1_2" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_2_2" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_3_2" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_4_2" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_5_2" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_6_2" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_7_2" src="./icons/drone.PNG" width="70" height="70"></button>
+                    </div>
+                    <div class="row">
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_0_3" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_1_3" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_2_3" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_3_3" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_4_3" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_5_3" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_6_3" src="./icons/drone.PNG" width="70" height="70"></button>
+                        <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_7_3" src="./icons/drone.PNG" width="70" height="70"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- end of container -->
+</div> <!-- end of navbar -->
+
+</body>
+</html> 
