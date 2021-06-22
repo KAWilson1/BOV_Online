@@ -1,0 +1,17 @@
+Styling
+Images/Icons
+    Get all images
+    Create icons for misc selector
+    Create icons for navigation menu
+    Determine order of items in grid
+    Misc selector
+        What all will be here?
+        What race specific things will be here?
+Export functionality
+Create landing page
+Deployment
+    Verify legal
+    Touch up images (optional)
+    Get domain
+    Get host
+    Launch site
