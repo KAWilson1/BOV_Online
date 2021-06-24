@@ -83,33 +83,57 @@ function set_action_category(grid_type){
     grid_population = [] // Determines what will display in Action Selector
     if (race_ele == "Race: Terran"){
         if (grid_type == "structure"){
-            grid_population = ["supply_depot.gif", "command_center.gif", "refinery.gif", "engineering_bay.gif",
-                                "sensor_tower.gif", "missile_turret.gif", "bunker.gif", "empty.gif",
-                                "barracks.gif", "factory.gif", "ghost_academy.gif", "starport.gif",
-                                "armory.gif", "fusion_core.gif"];
+            grid_population = [
+                        "supply_depot.gif", "command_center.gif", "refinery.gif", "engineering_bay.gif",
+                        "sensor_tower.gif", "missile_turret.gif", "bunker.gif", "empty.gif",
+                        "barracks.gif", "factory.gif", "ghost_academy.gif", "starport.gif",
+                        "armory.gif", "fusion_core.gif"
+                    ];
         }else if (grid_type == "unit"){
-            grid_population = ["scv.png", "mule.png", "marine.png", "reaper.png", "marauder.png", "ghost.png",
-                                "hellion.png", "hellbat.png", "widow_mine.png", "siege_tank.png", "cyclone.png", 
-                                "thor.png", "viking.png", "medivac.png", "liberator.png", "raven.png", 
-                                "battlecruiser.png", "banshee.png"];
+            grid_population = [
+                            "scv.png", "mule.png", "marine.png", "reaper.png", "marauder.png", "ghost.png",
+                            "hellion.png", "hellbat.png", "widow_mine.png", "siege_tank.png", "cyclone.png", 
+                            "thor.png", "viking.png", "medivac.png", "liberator.png", "raven.png", 
+                            "battlecruiser.png", "banshee.png"
+                        ];
         }else if (grid_type == "upgrade"){
-            grid_population = [];
+            grid_population = [
+                "infantry_weapons_level_one.png", "infantry_weapons_level_two.png",
+                "infantry_weapons_level_three.png", "vehicle_weapons_level_one.png",
+                "vehicle_weapons_level_two.png", "vehicle_weapons_level_three.png",
+                "ship_weapons_level_one.png", "ship_weapons_level_two.png", 
+                "ship_weapons_level_three.png", "infantry_armor_level_one.png",
+                "infantry_armor_level_two.png", "infantry_armor_level_three.png",
+                "vehicle_and_ship_plating_level_one.png", "vehicle_and_ship_plating_level_two.png",
+                "vehicle_and_ship_plating_level_three.png", "hyperflight_rotors.png",
+                "rapid_reignition_system.png", "smart_servos.png", 
+                "advanced_ballistics.png", "enhanced_shockwaves.png", "hi_sec_auto_tracking.png",
+                "mag_field_accelerator.png", "cloak.png", "concussive_shells.png", 
+                "stimpack.png", "weapon_refit.png", "drilling_claws.png", 
+                "corvid_reactor.png", "combat_shield.png", "infernal_pre_igniter.png",
+                "neosteel_armor.png"
+            ];
         }else if (grid_type == "misc"){
-            grid_population = [];
+            grid_population = ["scout.png"];
         }
     }else if (race_ele == "Race: Zerg"){
         if (grid_type == "structure"){
-            grid_population = ["hatchery.png","extractor.png","spawning_pool.png","evolution_chamber.png",
+            grid_population = [
+                "hatchery.png","extractor.png","spawning_pool.png","evolution_chamber.png",
                 "roach_warren.png","baneling_nest.png","spine_crawler.png","spore_crawler.png", "lair.png",
                 "hydralisk_den.png","lurker_den.png","spire.png","infestation_pit.png","nydus_network.png",
-                "nydus_worm.png", "hive.png","greater_spire.png","ultralisk_cavern.png"];
+                "nydus_worm.png", "hive.png","greater_spire.png","ultralisk_cavern.png"
+            ];
             }else if (grid_type == "unit"){
-            grid_population = ["drone.png","overlord.png","queen.png","empty.png","empty.png","empty.png",
+            grid_population = [
+                "drone.png","overlord.png","queen.png","empty.png","empty.png","empty.png",
                 "empty.png","empty.png", "zergling.png","baneling.png","roach.png","ravager.png","hydralisk.png",
                 "lurker.png","mutalisk.png","corruptor.png", "overseer.png","droperlord.png","swarm_host.png",
-                "infestor.png","viper.png","ultralisk.png","brood_lord.png"];
+                "infestor.png","viper.png","ultralisk.png","brood_lord.png"
+            ];
             }else if (grid_type == "upgrade"){
-            grid_population = ["melee_attacks_level_one.gif", "missile_attacks_level_one.gif", 
+            grid_population = [
+                "melee_attacks_level_one.gif", "missile_attacks_level_one.gif", 
                 "ground_carapace_level_one.gif", "metabolic_boost.gif", "pneumatized_carapace.gif",
                 "burrow.gif", "melee_attacks_level_two.gif", "missile_attacks_level_two.gif",
                 "ground_carapace_level_two.gif", "flyer_attacks_level_one.gif", "flyer_carapace_level_one.gif",
@@ -119,19 +143,44 @@ function set_action_category(grid_type){
                 "melee_attacks_level_three.gif", "missile_attacks_level_three.gif",
                 "ground_carapace_level_three.gif", "flyer_attacks_level_three.gif",
                 "flyer_carapace_level_three.gif", "chitinous_plating.gif", "anabolic_synthesis.gif",
-                "adrenal_glands.gif", "adaptive_talons.png", "seismic_spines.png"];
+                "adrenal_glands.gif", "adaptive_talons.png", "seismic_spines.png"
+            ];
         }else if (grid_type == "misc"){
             grid_population = ["scout.png", "inject.png", "creep.png"];
         }
     }else{ //protoss
         if(grid_type == "structure"){
-            
+            grid_population = [
+                "nexus.png", "assimilator.png", "pylon.png", "gateway.png", "forge.png", 
+                "cybernetics_core.png", "photon_cannon.png", "stargate.png", "robotics_facility.png", 
+                "twilight_council.png", "shield_battery.png", "fleet_bacon.png", "robotics_bay.png",
+                "templar_archives.png", "dark_shrine.png"
+            ];
         }else if(grid_type=="unit"){
-            
+            grid_population = [
+                "probe.png", "zealot.png", "adept.png", "sentry.png", "stalker.png",
+                "dark_templare.png", "high_templar.png", "archon.png", "warp_prism.png", 
+                "observer.png", "immortal.png", "colossus.png", "disruptor.png", 
+                "phoenix.png", "void_ray.png", "oracle.png", "carrier.png",
+                "tempest.png", "mothership.png"
+            ];
         }else if(grid_type == "upgrade"){
-            
+            grid_population = [
+                "ground_weapons_level_one.png", "ground_weapons_level_two.png",
+                "ground_weapons_level_three.png", "air_weapons_level_one", 
+                "air_weapons_level_two", "air_weapons_level_three",
+                "ground_armor_level_one.png", "ground_armor_level_two.png", 
+                "ground_armor_level_three.png", "air_armor_level_one.png", 
+                "air_armor_level_two.png", "air_armor_level_three.png",
+                "shields_level_one.png", "shields_level_two.png", 
+                "shields_level_three.png", "charge.png", "gravatic_boosters.png",
+                "gravatic_drive.png", "flux_vanes.png", "resonating_glaives.png",
+                "anion_pulse_crystals.png", "extended_thermal_lance.png",
+                "psionic_storm.png", "blink.png", "shadow_stride.png", 
+                "warp_gate.png", "tectonic_destabilizers.png"
+            ];
         }else if(grid_type == "misc"){
-            
+            grid_population = ["scout.png"];
         }   
     }
     write_to_grid(grid_population);
