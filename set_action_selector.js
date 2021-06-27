@@ -98,20 +98,20 @@ function set_action_category(grid_type){
                         ];
         }else if (grid_type == "upgrade"){
             grid_population = [
-                "infantry_weapons_level_one.png", "infantry_weapons_level_two.png",
-                "infantry_weapons_level_three.png", "vehicle_weapons_level_one.png",
-                "vehicle_weapons_level_two.png", "vehicle_weapons_level_three.png",
-                "ship_weapons_level_one.png", "ship_weapons_level_two.png", 
-                "ship_weapons_level_three.png", "infantry_armor_level_one.png",
-                "infantry_armor_level_two.png", "infantry_armor_level_three.png",
-                "vehicle_and_ship_plating_level_one.png", "vehicle_and_ship_plating_level_two.png",
-                "vehicle_and_ship_plating_level_three.png", "hyperflight_rotors.png",
-                "rapid_reignition_system.png", "smart_servos.png", 
-                "advanced_ballistics.png", "enhanced_shockwaves.png", "hi_sec_auto_tracking.png",
-                "mag_field_accelerator.png", "cloak.png", "concussive_shells.png", 
+                "infantry_weapons_level_one.gif", "infantry_weapons_level_two.gif",
+                "infantry_weapons_level_three.gif", "vehicle_weapons_level_one.gif",
+                "vehicle_weapons_level_two.gif", "vehicle_weapons_level_three.gif",
+                "ship_weapons_level_one.gif", "ship_weapons_level_two.gif", 
+                "ship_weapons_level_three.gif", "infantry_armor_level_one.gif",
+                "infantry_armor_level_two.gif", "infantry_armor_level_three.gif",
+                "vehicle_and_ship_plating_level_one.gif", "vehicle_and_ship_plating_level_two.gif",
+                "vehicle_and_ship_plating_level_three.gif", "hyperflight_rotors.jpg",
+                "rapid_reignition_system.jpg", "smart_servos.png", 
+                "advanced_ballistics.jpg", "enhanced_shockwaves.png", "hi_sec_auto_tracking.gif",
+                "mag_field_accelerator.jpg", "cloak.png", "concussive_shells.png", 
                 "stimpack.png", "weapon_refit.png", "drilling_claws.png", 
-                "corvid_reactor.png", "combat_shield.png", "infernal_pre_igniter.png",
-                "neosteel_armor.png"
+                "corvid_reactor.gif", "combat_shield.png", "infernal_pre_igniter.jpg",
+                "neosteel_armor.gif"
             ];
         }else if (grid_type == "misc"){
             grid_population = ["scout.png"];
@@ -159,25 +159,25 @@ function set_action_category(grid_type){
         }else if(grid_type=="unit"){
             grid_population = [
                 "probe.png", "zealot.png", "adept.png", "sentry.png", "stalker.png",
-                "dark_templare.png", "high_templar.png", "archon.png", "warp_prism.png", 
+                "dark_templar.png", "high_templar.png", "archon.png", "warp_prism.png", 
                 "observer.png", "immortal.png", "colossus.png", "disruptor.png", 
                 "phoenix.png", "void_ray.png", "oracle.png", "carrier.png",
                 "tempest.png", "mothership.png"
             ];
         }else if(grid_type == "upgrade"){
             grid_population = [
-                "ground_weapons_level_one.png", "ground_weapons_level_two.png",
-                "ground_weapons_level_three.png", "air_weapons_level_one", 
-                "air_weapons_level_two", "air_weapons_level_three",
-                "ground_armor_level_one.png", "ground_armor_level_two.png", 
-                "ground_armor_level_three.png", "air_armor_level_one.png", 
-                "air_armor_level_two.png", "air_armor_level_three.png",
-                "shields_level_one.png", "shields_level_two.png", 
-                "shields_level_three.png", "charge.png", "gravatic_boosters.png",
-                "gravatic_drive.png", "flux_vanes.png", "resonating_glaives.png",
-                "anion_pulse_crystals.png", "extended_thermal_lance.png",
+                "ground_weapons_level_one.gif", "ground_weapons_level_two.gif",
+                "ground_weapons_level_three.gif", "air_weapons_level_one.gif", 
+                "air_weapons_level_two.gif", "air_weapons_level_three.gif",
+                "ground_armor_level_one.gif", "ground_armor_level_two.gif", 
+                "ground_armor_level_three.gif", "air_armor_level_one.gif", 
+                "air_armor_level_two.gif", "air_armor_level_three.gif",
+                "shields_level_one.gif", "shields_level_two.gif", 
+                "shields_level_three.gif", "charge.png", "gravatic_boosters.gif",
+                "gravitic_drive.gif", "flux_vanes.png", "resonating_glaives.jpg",
+                "anion_pulse_crystals.png", "extended_thermal_lance.gif",
                 "psionic_storm.png", "blink.png", "shadow_stride.png", 
-                "warp_gate.png", "tectonic_destabilizers.png"
+                "warp_gate.gif", "tectonic_destabilizers.png"
             ];
         }else if(grid_type == "misc"){
             grid_population = ["scout.png"];
