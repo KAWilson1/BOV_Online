@@ -84,10 +84,11 @@ function set_action_category(grid_type){
     if (race_ele == "Race: Terran"){
         if (grid_type == "structure"){
             grid_population = [
-                        "supply_depot.gif", "command_center.gif", "refinery.gif", "engineering_bay.gif",
-                        "sensor_tower.gif", "missile_turret.gif", "bunker.gif", "empty.gif",
-                        "barracks.gif", "factory.gif", "ghost_academy.gif", "starport.gif",
-                        "armory.gif", "fusion_core.gif"
+                        "supply_depot.png", "command_center.png", "refinery.png", "engineering_bay.png",
+                        "sensor_tower.png", "missile_turret.png", "bunker.png", "empty.png",
+                        "barracks.png", "factory.png", "ghost_academy.png", "starport.png",
+                        "armory.png", "fusion_core.png", "empty.png", "empty.png",
+                        "tech_lab.png", "reactor.png", "orbital_command.png", "planetary_fortress.png"
                     ];
         }else if (grid_type == "unit"){
             grid_population = [
@@ -135,7 +136,7 @@ function set_action_category(grid_type){
             grid_population = [
                 "melee_attacks_level_one.gif", "missile_attacks_level_one.gif", 
                 "ground_carapace_level_one.gif", "metabolic_boost.gif", "pneumatized_carapace.gif",
-                "burrow.gif", "melee_attacks_level_two.gif", "missile_attacks_level_two.gif",
+                "burrow.png", "melee_attacks_level_two.gif", "missile_attacks_level_two.gif",
                 "ground_carapace_level_two.gif", "flyer_attacks_level_one.gif", "flyer_carapace_level_one.gif",
                 "flyer_attacks_level_two.gif", "flyer_carapace_level_two.gif", "centrifugal_hooks.gif",
                 "glial_reconstitution.gif", "tunneling_claws.gif", "grooved_spines.png",
@@ -153,7 +154,7 @@ function set_action_category(grid_type){
             grid_population = [
                 "nexus.png", "assimilator.png", "pylon.png", "gateway.png", "forge.png", 
                 "cybernetics_core.png", "photon_cannon.png", "stargate.png", "robotics_facility.png", 
-                "twilight_council.png", "shield_battery.png", "fleet_bacon.png", "robotics_bay.png",
+                "twilight_council.png", "shield_battery.png", "fleet_beacon.png", "robotics_bay.png",
                 "templar_archives.png", "dark_shrine.png"
             ];
         }else if(grid_type=="unit"){
