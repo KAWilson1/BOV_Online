@@ -15,6 +15,23 @@ function select_race(race_button){
 
     // Show selected race's structures by default
     set_action_category("structure");
+
+    // Style active button
+    set_active_race(race_button);
+}
+
+function set_active_race(active_race_button){
+    var img_terran = document.querySelector('#terran');
+    var img_zerg = document.querySelector('#zerg');
+    var img_protoss = document.querySelector('#protoss');
+    
+    // Remove all existing "active_race" classes and add "active_race" to active_race
+    img_terran.classList.remove('active_race');
+    img_zerg.classList.remove('active_race');
+    img_protoss.classList.remove('active_race');
+    
+    var race_image = active_race_button.querySelector("img");
+    race_image.classList.add('active_race');
 }
 
 function write_to_grid(grid_population){
