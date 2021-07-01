@@ -1,16 +1,5 @@
 Styling
     Add watermark ("Created by sc2bovo.com")
-Images/Icons
-    Change icons to buttons for navigation menu (action selector)
-    Misc selector
-        Gas Pull Off icon
-        Gas Put on icon
-        Race specific  
-            Terran
-                Scanner Sweep
-                Calldown: Extra supplies
-            Protoss
-                Chrono
 Add Time column
 Export functionality
     For now, hiding Action Selector, insert below and delete icons will suffice
