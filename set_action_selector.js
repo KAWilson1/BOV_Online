@@ -115,7 +115,8 @@ function set_action_category(grid_type){
                 "neosteel_armor.gif"
             ];
         }else if (grid_type == "misc"){
-            grid_population = ["scout.png"];
+            grid_population = ["scout.png", "gas_pull_off.png", "gas_push_on.png", "scanner_sweep.png",
+                        "calldown_extra_supplies.png"];
         }
     }else if (race_ele == "Race: Zerg"){
         if (grid_type == "structure"){
@@ -147,7 +148,7 @@ function set_action_category(grid_type){
                 "adrenal_glands.gif", "adaptive_talons.png", "seismic_spines.png"
             ];
         }else if (grid_type == "misc"){
-            grid_population = ["scout.png", "inject.png", "creep.png"];
+            grid_population = ["scout.png", "gas_pull_off.png", "gas_push_on.png", "inject.png", "creep.png"];
         }
     }else{ //protoss
         if(grid_type == "structure"){
@@ -181,7 +182,7 @@ function set_action_category(grid_type){
                 "warp_gate.gif", "tectonic_destabilizers.png"
             ];
         }else if(grid_type == "misc"){
-            grid_population = ["scout.png"];
+            grid_population = ["scout.png", "gas_pull_off.png", "gas_push_on.png", "chrono_boost.png"];
         }   
     }
     write_to_grid(grid_population);
