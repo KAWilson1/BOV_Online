@@ -48,13 +48,20 @@ function create_bo_unit(active=true){
     var div_row = document.createElement('div');
     div_row.setAttribute("class", "row");
 
-    // Populate Build Order Unit (Trigger, Action, Notes, Delete, Insert Below)
+    // Populate Build Order Unit (Trigger, Time, Action, Notes, Delete, Insert Below)
     var div_trigger = document.createElement('div');
     div_trigger.setAttribute("class", "trigger col-xl-1");
     var p_trigger = document.createElement('p');
     p_trigger.setAttribute("contentEditable", "true");
     p_trigger.innerHTML = "                     ";
     div_trigger.appendChild(p_trigger);
+
+    var div_time = document.createElement('div');
+    div_time.setAttribute("class", "trigger col-xl-1"); // Shares styling with trigger
+    var p_time = document.createElement('p');
+    p_time.setAttribute("contentEditable", "true");
+    p_time.innerHTML = "                     ";
+    div_time.appendChild(p_time);
 
     var div_action = document.createElement('div');
     div_action.setAttribute("class", "action col-xl-5");
@@ -89,6 +96,7 @@ function create_bo_unit(active=true){
 
     // Populate row with components of bo_unit, append the row to bo_unit
     div_row.appendChild(div_trigger);
+    div_row.appendChild(div_time);
     div_row.appendChild(div_action);
     div_row.appendChild(div_notes);
     div_row.appendChild(div_delete);
