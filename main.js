@@ -138,19 +138,3 @@ function insert_below_bo_unit(unit_to_insert_below){
     // Insert new unit below unit that initiated the insert after
     parent_bo_unit.parentNode.insertBefore(blank_bo_unit, parent_bo_unit.nextSibling);
 }
-
-function select_race(race_button){
-    // Populate Action Selector depending on selected race
-    var img_ele = race_button.querySelector('img');
-    var race_ele = document.querySelector('#bo_race'); // BO metadata at top of page
-
-    if (img_ele.id == "terran"){
-        race_ele.innerHTML = "Race: Terran";
-    }
-    else if (img_ele.id == "zerg"){
-        race_ele.innerHTML = "Race: Zerg";
-    }
-    else{ //protoss
-        race_ele.innerHTML = "Race: Protoss";
-    }
-}

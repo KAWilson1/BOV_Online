@@ -1,3 +1,22 @@
+function select_race(race_button){
+    // Populate Action Selector depending on selected race
+    var img_ele = race_button.querySelector('img');
+    var race_ele = document.querySelector('#bo_race'); // BO metadata at top of page
+
+    if (img_ele.id == "terran"){
+        race_ele.innerHTML = "Race: Terran";
+    }
+    else if (img_ele.id == "zerg"){
+        race_ele.innerHTML = "Race: Zerg";
+    }
+    else{ //protoss
+        race_ele.innerHTML = "Race: Protoss";
+    }
+
+    // Show selected race's structures by default
+    set_action_category("structure");
+}
+
 function write_to_grid(grid_population){
     if(grid_population.length < 32){
         // Append empty images until length is 32 
