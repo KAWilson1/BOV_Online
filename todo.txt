@@ -1,17 +1,25 @@
 Styling
+    Add watermark ("Created by sc2bovo.com")
 Images/Icons
-    Get all images
-    Create icons for misc selector
-    Create icons for navigation menu
-    Determine order of items in grid
+    Change icons to buttons for navigation menu (action selector)
     Misc selector
-        What all will be here?
-        What race specific things will be here?
+        Gas Pull Off icon
+        Gas Put on icon
+        Race specific  
+            Terran
+                Scanner Sweep
+                Calldown: Extra supplies
+            Protoss
+                Chrono
+Add Time column
 Export functionality
-Create landing page
+    For now, hiding Action Selector, insert below and delete icons will suffice
+    Remove old export functionality from front end
 Deployment
     Verify legal
     Touch up images (optional)
-    Get domain
-    Get host
-    Launch site
+    Website
+        Create landing page
+        Get domain
+        Get host
+        Launch site
