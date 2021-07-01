@@ -15,13 +15,11 @@ function add_action(image_container_element){
     // If the action was the first action in the bo_unit and the bo_unit is the last item in bo_container
     // Add another bo_unit (to prevent constantly clicking + Step button)
     var num_actions_in_bo_unit = active_action.querySelectorAll('img').length;
-    console.log(num_actions_in_bo_unit);
     if (num_actions_in_bo_unit == 1){
         // Check to see if bo_unit is the last one in bo_container
         // If it is, create and append a non-active bo_step
         var bo_container = active_unit.parentNode;
         var bo_units = bo_container.querySelectorAll('div .bo_unit'); // First element will be headers
-        console.log(bo_units);
         var last_bo_unit = bo_units[bo_units.length - 1];
         if (last_bo_unit.id == active_unit.id){
             add_bo_unit(active=false);
@@ -134,15 +132,11 @@ function delete_bo_unit(unit_to_delete){
 }
 
 function insert_below_bo_unit(unit_to_insert_below){
-    console.log("insert ran"); //START HERE: Fix insert function
-    console.log(unit_to_insert_below);
-
     var blank_bo_unit = create_bo_unit();
     var parent_bo_unit = unit_to_insert_below.parentNode.parentNode;
 
     // Insert new unit below unit that initiated the insert after
     parent_bo_unit.parentNode.insertBefore(blank_bo_unit, parent_bo_unit.nextSibling);
-    console.log(parent_bo_unit);
 }
 
 function select_race(race_button){
