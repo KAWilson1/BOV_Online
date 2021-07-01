@@ -2,7 +2,6 @@ Styling
     Add watermark ("Created by sc2bovo.com")
 Export functionality
     For now, hiding Action Selector, insert below and delete icons will suffice
-    Remove old export functionality from front end
 Deployment
     Verify legal
     Touch up images (optional)
