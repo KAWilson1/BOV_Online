@@ -25,10 +25,22 @@ body {
     color: black;
 }
 
+.race {
+    width: 43px;
+    height: 68px;
+    border: 0px black solid;
+
+}
+
 .active {
     border-radius: 4px;
     background-color: #175676 !important;
 }
+
+.active_race {
+    border: 4px orange solid !important;
+}
+
 /* The navigation bar */
 .navbar {
   overflow: hidden;

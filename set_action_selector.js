@@ -1,20 +1,26 @@
 function select_race(race_button){
     // Populate Action Selector depending on selected race
     var img_ele = race_button.querySelector('img');
-    var race_ele = document.querySelector('#bo_race'); // BO metadata at top of page
 
-    if (img_ele.id == "terran"){
-        race_ele.innerHTML = "Race: Terran";
-    }
-    else if (img_ele.id == "zerg"){
-        race_ele.innerHTML = "Race: Zerg";
-    }
-    else{ //protoss
-        race_ele.innerHTML = "Race: Protoss";
-    }
+    // Style active button
+    set_active_race(race_button);
 
     // Show selected race's structures by default
     set_action_category("structure");
+}
+
+function set_active_race(active_race_button){
+    var img_terran = document.querySelector('#terran');
+    var img_zerg = document.querySelector('#zerg');
+    var img_protoss = document.querySelector('#protoss');
+    
+    // Remove all existing "active_race" classes and add "active_race" to active_race
+    img_terran.classList.remove('active_race');
+    img_zerg.classList.remove('active_race');
+    img_protoss.classList.remove('active_race');
+    
+    var race_image = active_race_button.querySelector("img");
+    race_image.classList.add('active_race');
 }
 
 function write_to_grid(grid_population){
@@ -98,9 +104,9 @@ function write_to_grid(grid_population){
 
 function set_action_category(grid_type){
     // grid_type can be "structure", "unit", "upgrade", "misc"
-    var race_ele = document.querySelector('#bo_race').textContent; // BO metadata at top of page
+    var race_ele = document.querySelector('.active_race'); 
     grid_population = [] // Determines what will display in Action Selector
-    if (race_ele == "Race: Terran"){
+    if (race_ele.id == "terran"){
         if (grid_type == "structure"){
             grid_population = [
                         "supply_depot.png", "command_center.png", "refinery.png", "engineering_bay.png",
@@ -137,7 +143,7 @@ function set_action_category(grid_type){
             grid_population = ["scout.png", "gas_pull_off.png", "gas_push_on.png", "scanner_sweep.png",
                         "calldown_extra_supplies.png"];
         }
-    }else if (race_ele == "Race: Zerg"){
+    }else if (race_ele.id == "zerg"){
         if (grid_type == "structure"){
             grid_population = [
                 "hatchery.png","extractor.png","spawning_pool.png","evolution_chamber.png",
