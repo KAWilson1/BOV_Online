@@ -9,12 +9,14 @@
 <link rel="stylesheet" href="./style.css">
 <script src="./main.js"></script> 
 <script src="./set_action_selector.js"></script> 
+<script src="./export_bo.js"></script> 
 <body onload="add_bo_unit();">
 
 <!-- Header -->
 <div class="container"> 
     <div class="row">
         <div class="col-xl-6 build_metadata">Title:</div>
+        <div class="col-xl-6 build_metadata">Created by sc2bovo.com</div>
     </div>
 </div>
 
@@ -25,6 +27,8 @@
     <button onclick="select_race(this)"><img id="protoss" class="race" src="./icons/r_protoss.PNG"></button>
 </div>
 
+<!-- Export -->
+<button onclick="export_bo()">Export</button>
 
 
 <!-- BO Container -->
@@ -96,7 +100,7 @@
 <!-- Action Selector -->
 
 
-<div class="navbar">
+<div class="action_selector">
     <div class="container">
         <div class="row" style="width:100%;">
             <div id="action_category_selector" class="col-4">
@@ -151,7 +155,7 @@
             </div>
         </div>
     </div> <!-- end of container -->
-</div> <!-- end of navbar -->
+</div> <!-- end of action_selector -->
 
 </body>
 </html> 
