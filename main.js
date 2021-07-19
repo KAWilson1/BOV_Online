@@ -19,7 +19,7 @@ function add_action(image_container_element){
         // Check to see if bo_unit is the last one in bo_container
         // If it is, create and append a non-active bo_step
         var bo_container = active_unit.parentNode;
-        var bo_units = bo_container.querySelectorAll('div .bo_unit'); // First element will be headers
+        var bo_units = bo_container.querySelectorAll('div .bo_unit'); // First element will be headers?
         var last_bo_unit = bo_units[bo_units.length - 1];
         if (last_bo_unit.id == active_unit.id){
             add_bo_unit(active=false);
