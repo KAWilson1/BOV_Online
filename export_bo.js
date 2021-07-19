@@ -29,6 +29,9 @@ function export_bo(){
     bo_header_row.removeChild(bo_header_row.lastElementChild);
     bo_header_row.removeChild(bo_header_row.lastElementChild);
 
+    // Hide Action Selector
+    var action_selector = document.querySelector(".action_selector");
+    action_selector.style.display = "none";
 
 
 }
