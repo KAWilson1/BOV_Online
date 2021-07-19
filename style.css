@@ -42,11 +42,11 @@ body {
 }
 
 /* The navigation bar */
-.navbar {
+.action_selector {
   overflow: hidden;
   background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  bottom: 0; /* Position the navbar at the bottom of the page */
+  position: fixed; /* Set the action_selector to fixed position */
+  bottom: 0; /* Position the action_selector at the bottom of the page */
   width: 100%; /* Full width */
 }
 .main {
