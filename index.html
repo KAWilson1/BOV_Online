@@ -20,13 +20,6 @@
     </div>
 </div>
 
-<!-- Race selector -->
-<div> 
-    <button onclick="select_race(this)"><img id="terran" class="race" src="./icons/r_terran.PNG"></button>
-    <button onclick="select_race(this)"><img id="zerg" class="race" src="./icons/r_zerg.PNG"></button>
-    <button onclick="select_race(this)"><img id="protoss" class="race" src="./icons/r_protoss.PNG"></button>
-</div>
-
 <!-- Export -->
 <button onclick="export_bo()">Export</button>
 
@@ -98,11 +91,15 @@
 </div>
 
 <!-- Action Selector -->
-
-
 <div class="action_selector">
     <div class="container">
         <div class="row" style="width:100%;">
+            <!-- Race selector -->
+            <div class="col-2"> 
+                <button class="btn_race_select" onclick="select_race(this)"><img id="terran" class="race" src="./icons/r_terran.PNG"></button>
+                <button class="btn_race_select" onclick="select_race(this)"><img id="zerg" class="race" src="./icons/r_zerg.PNG"></button>
+                <button class="btn_race_select" onclick="select_race(this)"><img id="protoss" class="race" src="./icons/r_protoss.PNG"></button>
+            </div>
             <div id="action_category_selector" class="col-4">
                 <button class="btn_action_category" onclick="set_action_category('structure')">Structures</button>
                 <button class="btn_action_category" onclick="set_action_category('unit')">Units</button>

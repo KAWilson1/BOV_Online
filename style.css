@@ -29,7 +29,6 @@ body {
     width: 43px;
     height: 68px;
     border: 0px black solid;
-
 }
 
 .active {
@@ -52,8 +51,13 @@ body {
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
+
+.btn_race_select{
+    display: block;
+}
+
 .btn_action_category {
-    display: inline-block;
+    display: block;
     vertical-align: top;
 }
 .action_grid {
