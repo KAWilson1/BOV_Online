@@ -1,0 +1,13 @@
+#menu_bar {
+    padding-top: 10px;
+    padding-bottom: 4px;
+    background-color:rgb(75,114,231);
+    margin-bottom: 15px;
+}
+
+.menu_item {
+    color:#fff;
+    text-align:center;
+    font-size:28px;
+    font-weight:700;
+}
