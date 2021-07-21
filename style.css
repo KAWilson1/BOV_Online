@@ -19,7 +19,12 @@ body {
 }
 #bo_headers {
     background-color: white;
-    color: black;
+    color: black;   
+}
+.bo_header {
+    border: solid black 2px;
+    font-size:18px;
+    font-weight:500;
 }
 
 .race {
