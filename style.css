@@ -1,5 +1,5 @@
 body {
-    background-color: #131200;
+    background-color: #93C6D6;
 }
 #bo_container {
     overflow-y: scroll;
@@ -11,14 +11,14 @@ body {
 }
 #bo_container .notes {
     /*width: 50px;*/
-    color: white;
+    color: #111;
     font-weight: bold;
 }
 #bo_container .bo_unit {
     /*width: 200px;*/
     height: auto;
     border:  1px solid black;
-    background-color: #9CAEA9;
+    background-color: #eee;
 }
 #bo_headers {
     background-color: white;
@@ -33,31 +33,30 @@ body {
 
 .active {
     border-radius: 4px;
-    background-color: #175676 !important;
+    background-color: #b6b9bd !important;
 }
 
 .active_race {
     border: 4px orange solid !important;
 }
 
-/* The navigation bar */
+
 .action_selector {
   overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the action_selector to fixed position */
+  background-color: #5F6062;
+  position: fixed; /* Prevents the action_selector from moving */
   bottom: 0; /* Position the action_selector at the bottom of the page */
-  width: 100%; /* Full width */
+  width: 100%; 
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
-.btn_race_select{
-    display: block;
-}
-
 .btn_action_category {
     display: block;
+    width:100%;
 }
 .action_grid {
     width: 70px; 
@@ -67,4 +66,14 @@ body {
 }
 .build_metadata {
     color: white;
+}
+
+#action_category_selector {
+    display:inline-block;
+    
+}
+
+.btn_race {
+    margin-left: 3px;
+    margin-right: 3px;
 }

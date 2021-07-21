@@ -22,8 +22,8 @@
             <p>Author:<input type="text" id="author" name="author" value="Pieceful"></p>
         </div>
         <div class="col-xl-3 build_metadata">
-            <button onclick="export_bo()">Export</button>
-            <button>Reset</button>
+            <button onclick="export_bo()">Start Editing</button>
+            <button>Stop Editing</button>
             <button>Help</button>
         </div>
         <div class="col-xl-3 build_metadata">Created by sc2bovo.com</div>
@@ -41,16 +41,16 @@
                 Trigger
             </div>
 
-            <div class="col-xl-3">
+            <div class="col-xl-1">
                 Time
             </div>
             
-            <div class="col-xl-2">
+            <div class="col-xl-4">
                 Action(s)
                 <img id="action">
             </div>
             
-            <div class="col-xl-2">
+            <div class="col-xl-4">
                 Notes
             </div> 
             <div class="col-xl-1">
@@ -104,18 +104,47 @@
     <div class="container">
         <div class="row" style="width:100%;">
             <!-- Race selector -->
-            <div class="col-2"> 
-                <button class="btn_race_select" onclick="select_race(this)"><img id="terran" class="race" src="./icons/r_terran.PNG"></button>
-                <button class="btn_race_select" onclick="select_race(this)"><img id="zerg" class="race" src="./icons/r_zerg.PNG"></button>
-                <button class="btn_race_select" onclick="select_race(this)"><img id="protoss" class="race" src="./icons/r_protoss.PNG"></button>
+            <div class="col-4"> 
+                <div>
+                    <p style="text-align:center;">Select Race and Category</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4" style="display:flex; justify-content: center;">
+                                &nbsp
+                            </div>
+                            <div class="col-4" style="display:flex; justify-content: center;">
+                                <button class="btn_race" onclick="select_race(this)"><img id="terran" class="race" src="./icons/r_terran.PNG"></button>
+                                <button class="btn_race" onclick="select_race(this)"><img id="zerg" class="race" src="./icons/r_zerg.PNG"></button>
+                                <button class="btn_race" onclick="select_race(this)"><img id="protoss" class="race" src="./icons/r_protoss.PNG"></button>
+                            </div>
+                            <div class="col-4" style="display:flex; justify-content: center;">
+                                &nbsp                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container" style="padding-top:15px;">
+                        <div class="row">
+                            <div class="col-4">
+                                &nbsp
+                            </div>
+                            <div class="col-4" id="action_category_selector">
+                                <button class="btn_action_category" onclick="set_action_category('structure')">Structures</button>
+                                <button class="btn_action_category" onclick="set_action_category('unit')">Units</button>
+                                <button class="btn_action_category" onclick="set_action_category('upgrade')">Upgrades</button>
+                                <button class="btn_action_category" onclick="set_action_category('misc')">Misc.</button>
+                            </div>
+                            <div class="col-4">
+                                &nbsp
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="action_category_selector" class="col-4">
-                <button class="btn_action_category" onclick="set_action_category('structure')">Structures</button>
-                <button class="btn_action_category" onclick="set_action_category('unit')">Units</button>
-                <button class="btn_action_category" onclick="set_action_category('upgrade')">Upgrades</button>
-                <button class="btn_action_category" onclick="set_action_category('misc')">Misc.</button>
-            </div>
-            <div id="action_selector_grid" class="col-6">
+
+
+            <div id="action_selector_grid" class="col-8">
                 <div class="container">
                     <div class="row">
                         <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_0_0" src="./icons/drone.PNG" width="70" height="70"></button>

@@ -62,7 +62,7 @@ function create_bo_unit(active=true){
     div_time.appendChild(p_time);
 
     var div_action = document.createElement('div');
-    div_action.setAttribute("class", "action col-xl-5");
+    div_action.setAttribute("class", "action col-xl-4");
     var p_action = document.createElement('p');
     p_action.innerHTML = "";
     div_action.appendChild(p_action);
