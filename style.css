@@ -70,6 +70,10 @@ body {
 .build_metadata {
     color: white;
 }
+.metadata_header {
+    font-size:20px;
+    margin-bottom:8px;
+}
 
 #action_category_selector {
     display:inline-block;

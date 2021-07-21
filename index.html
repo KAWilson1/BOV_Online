@@ -29,18 +29,13 @@
 <!-- Metadata -->
 <div class="container"> 
     <div class="row">
-        <div class="col-xl-3 build_metadata">
-            <p>Title:<input type="text" id="title" name="title" value="My BOVO Build"></p>
+        <div class="col-xl-4 build_metadata">
+            <p class="metadata_header">Build Title</br><input type="text" id="title" name="title" value="My BOVO Build"></p>
         </div>
-        <div class="col-xl-3 build_metadata">
-            <p>Author:<input type="text" id="author" name="author" value="Pieceful"></p>
+        <div class="col-xl-4 build_metadata">
+            <p class="metadata_header">Author</br><input type="text" id="author" name="author" value="Pieceful"></p>
         </div>
-        <div class="col-xl-3 build_metadata">
-            <button onclick="export_bo()">Start Editing</button>
-            <button>Stop Editing</button>
-            <button>Help</button>
-        </div>
-        <div class="col-xl-3 build_metadata">Created by sc2bovo.com</div>
+        <div class="col-xl-4 build_metadata" style="font-size:32px; font-weight: 700; margin-top: 15px;">Created by sc2bovo.com</div>
     </div>
 </div>
 
@@ -80,7 +75,7 @@
 
 <div class="container">
     <div class="row">
-        <button onclick="add_bo_unit()">Add a Step</button>
+        <button onclick="add_bo_unit()" style="width:160px;">Add a Step</button>
     </div>
     <p>&nbsp</p>
     <p>&nbsp</p>
@@ -147,6 +142,7 @@
                                 <button class="btn_action_category" onclick="set_action_category('unit')">Units</button>
                                 <button class="btn_action_category" onclick="set_action_category('upgrade')">Upgrades</button>
                                 <button class="btn_action_category" onclick="set_action_category('misc')">Misc.</button>
+                                <button onclick="export_bo()">Start Editing</button>
                             </div>
                             <div class="col-4">
                                 &nbsp
