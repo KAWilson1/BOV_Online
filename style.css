@@ -4,12 +4,8 @@ body {
 #bo_container {
     overflow-y: scroll;
 }
-#bo_container .trigger {
-    color: #111;
-    font-size: 22px;
-    word-wrap: break-word;
-}
-#bo_container .notes {
+#bo_container .bo_text {
+    /* Styling for bo_units' Trigger, Time and Notes */
     color: #111;
     font-size: 22px;
     word-wrap: break-word;
