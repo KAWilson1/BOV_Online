@@ -16,6 +16,8 @@ body {
     height: auto;
     border:  1px solid black;
     background-color: #eee;
+    min-height: 80px;
+    padding-top:3px;
 }
 #bo_headers {
     background-color: white;
@@ -83,4 +85,13 @@ body {
 .btn_race {
     margin-left: 3px;
     margin-right: 3px;
+}
+
+.edit_bo_icon {
+    /* Delete and Insert Below icons */
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

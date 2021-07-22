@@ -64,9 +64,6 @@ function create_bo_unit(active=true){
 
     var div_action = document.createElement('div');
     div_action.setAttribute("class", "action col-xl-4");
-    var p_action = document.createElement('p');
-    p_action.innerHTML = "";
-    div_action.appendChild(p_action);
 
     var div_notes = document.createElement('div');
     div_notes.setAttribute("class", "bo_text col-xl-4");
@@ -79,18 +76,16 @@ function create_bo_unit(active=true){
     div_delete.setAttribute("class", "delete col-xl-1");
     div_delete.setAttribute("onclick", "delete_bo_unit(this)");
     var img_delete = document.createElement('img');
-    img_delete.height = "50";
-    img_delete.width = "50";
-    img_delete.src = "trash.png"
+    img_delete.setAttribute("class", "edit_bo_icon");
+    img_delete.src = "trash.png";
     div_delete.appendChild(img_delete);
 
     var div_insert = document.createElement('div');
     div_insert.setAttribute("class", "insert col-xl-1");
     div_insert.setAttribute("onclick", "insert_below_bo_unit(this)");
     var img_insert = document.createElement('img');
-    img_insert.height = "50";
-    img_insert.width = "50";
-    img_insert.src = "edit.png"
+    img_insert.setAttribute("class", "edit_bo_icon");
+    img_insert.src = "edit.png";
     div_insert.appendChild(img_insert);
 
     // Populate row with components of bo_unit, append the row to bo_unit
