@@ -75,7 +75,7 @@
 
 <div class="container">
     <div class="row">
-        <button onclick="add_bo_unit()" style="width:160px;">Add a Step</button>
+        <center><button class="btn btn-primary" onclick="add_bo_unit()" style="width:160px; margin-top:10px;">Add a Step</button></center>
     </div>
     <p>&nbsp</p>
     <p>&nbsp</p>
@@ -138,11 +138,10 @@
                                 &nbsp
                             </div>
                             <div class="col-4" id="action_category_selector">
-                                <button class="btn_action_category" onclick="set_action_category('structure')">Structures</button>
-                                <button class="btn_action_category" onclick="set_action_category('unit')">Units</button>
-                                <button class="btn_action_category" onclick="set_action_category('upgrade')">Upgrades</button>
-                                <button class="btn_action_category" onclick="set_action_category('misc')">Misc.</button>
-                                <button onclick="export_bo()">Start Editing</button>
+                                <button class="btn btn-primary btn_action_category" onclick="set_action_category('structure')">Structures</button>
+                                <button class="btn btn-primary btn_action_category" onclick="set_action_category('unit')">Units</button>
+                                <button class="btn btn-primary btn_action_category" onclick="set_action_category('upgrade')">Upgrades</button>
+                                <button class="btn btn-primary btn_action_category" onclick="set_action_category('misc')">Misc.</button>
                             </div>
                             <div class="col-4">
                                 &nbsp
@@ -197,6 +196,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div>
+            <center><button type="button" class="btn btn-success" onclick="export_bo()" style="margin-top:10px;">Stop Editing</button></center>
         </div>
     </div> <!-- end of container -->
 </div> <!-- end of action_selector -->
