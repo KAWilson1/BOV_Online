@@ -7,56 +7,67 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
 <link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./menu.css">
 <script src="./main.js"></script> 
 <script src="./set_action_selector.js"></script> 
 <script src="./export_bo.js"></script> 
 <body onload="add_bo_unit();">
 
-<!-- Header -->
-<div class="container"> 
-    <div class="row">
-        <div class="col-xl-6 build_metadata">Title:</div>
-        <div class="col-xl-6 build_metadata">Created by sc2bovo.com</div>
+<!-- Menu -->
+<div class="container-fluid">
+    <div class="row" id="menu_bar">
+        <div class="col">&nbsp</div>
+        <div class="col"><p class="menu_item">Home</p></div>
+        <div class="col"><p class="menu_item" id="active_menu_item">BOVO</p></div>
+        <div class="col"><p class="menu_item">Donate</p></div>
+        <div class="col"><p class="menu_item">Help</p></div>
+        <div class="col"><p class="menu_item">About</p></div>
+        <div class="col">&nbsp</div>
     </div>
 </div>
 
-<!-- Race selector -->
-<div> 
-    <button onclick="select_race(this)"><img id="terran" class="race" src="./icons/r_terran.PNG"></button>
-    <button onclick="select_race(this)"><img id="zerg" class="race" src="./icons/r_zerg.PNG"></button>
-    <button onclick="select_race(this)"><img id="protoss" class="race" src="./icons/r_protoss.PNG"></button>
+<!-- Metadata -->
+<div class="container"> 
+    <div class="row">
+        <div class="col-xl-4 build_metadata">
+            <p class="metadata_header">Build Title</br><input type="text" id="title" name="title" value="My BOVO Build" autocomplete="off" style="width:90%;"></p>
+        </div>
+        <div class="col-xl-4 build_metadata">
+            <p class="metadata_header">Author</br><input type="text" id="author" name="author" value="Pieceful" autocomplete="off"></p>
+        </div>
+        <div class="col-xl-4 build_metadata" style="font-size:32px; font-weight: 700; margin-top: 15px;">Created by sc2bovo.com</div>
+    </div>
 </div>
 
-<!-- Export -->
-<button onclick="export_bo()">Export</button>
+
 
 
 <!-- BO Container -->
 <div id="bo_container">
     <div class="container" id="bo_headers"> <!--Table Headers-->
-        <div class="row" style="border: 1px solid red;">
-            <div class="col-xl-1">
+        <div class="row">
+            <div class="col-xl-1 bo_header">
                 Trigger
             </div>
 
-            <div class="col-xl-3">
+            <div class="col-xl-1 bo_header">
                 Time
             </div>
             
-            <div class="col-xl-2">
+            <div class="col-xl-4 bo_header">
                 Action(s)
                 <img id="action">
             </div>
             
-            <div class="col-xl-2">
+            <div class="col-xl-4 bo_header">
                 Notes
             </div> 
-            <div class="col-xl-1">
-                Delete
+            <div class="col-xl-1 bo_header">
+                <center>Delete</center>
             </div>
 
-            <div class="col-xl-1">
-                Insert
+            <div class="col-xl-1 bo_header">
+                <center>Insert</center>
             </div>
         </div>
     </div>
@@ -64,7 +75,7 @@
 
 <div class="container">
     <div class="row">
-        <button onclick="add_bo_unit()">Add a Step</button>
+        <center><button class="btn btn-primary" onclick="add_bo_unit()" style="width:160px; margin-top:10px;">Add a Step</button></center>
     </div>
     <p>&nbsp</p>
     <p>&nbsp</p>
@@ -98,18 +109,50 @@
 </div>
 
 <!-- Action Selector -->
-
-
 <div class="action_selector">
     <div class="container">
         <div class="row" style="width:100%;">
-            <div id="action_category_selector" class="col-4">
-                <button class="btn_action_category" onclick="set_action_category('structure')">Structures</button>
-                <button class="btn_action_category" onclick="set_action_category('unit')">Units</button>
-                <button class="btn_action_category" onclick="set_action_category('upgrade')">Upgrades</button>
-                <button class="btn_action_category" onclick="set_action_category('misc')">Misc.</button>
+            <!-- Race selector -->
+            <div class="col-4"> 
+                <div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4" style="display:flex; justify-content: center;">
+                                &nbsp
+                            </div>
+                            <div class="col-4" style="display:flex; justify-content: center; margin-top:15px;">
+                                <button class="btn_race" onclick="select_race(this)"><img id="terran" class="race" src="./icons/r_terran.PNG"></button>
+                                <button class="btn_race" onclick="select_race(this)"><img id="zerg" class="race" src="./icons/r_zerg.PNG"></button>
+                                <button class="btn_race" onclick="select_race(this)"><img id="protoss" class="race" src="./icons/r_protoss.PNG"></button>
+                            </div>
+                            <div class="col-4" style="display:flex; justify-content: center;">
+                                &nbsp                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="container" style="padding-top:15px;">
+                        <div class="row">
+                            <div class="col-4">
+                                &nbsp
+                            </div>
+                            <div class="col-4" id="action_category_selector">
+                                <button class="btn btn-primary btn_action_category" onclick="set_action_category('structure')">Structures</button>
+                                <button class="btn btn-primary btn_action_category" onclick="set_action_category('unit')">Units</button>
+                                <button class="btn btn-primary btn_action_category" onclick="set_action_category('upgrade')">Upgrades</button>
+                                <button class="btn btn-primary btn_action_category" onclick="set_action_category('misc')">Misc.</button>
+                            </div>
+                            <div class="col-4">
+                                &nbsp
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="action_selector_grid" class="col-6">
+
+
+            <div id="action_selector_grid" class="col-8">
                 <div class="container">
                     <div class="row">
                         <button class="action_grid" onclick="add_action(this)"><img id="action_selector_grid_0_0" src="./icons/drone.PNG" width="70" height="70"></button>
@@ -153,6 +196,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div>
+            <center><button type="button" class="btn btn-success" onclick="export_bo()" style="margin-top:10px;">Stop Editing</button></center>
         </div>
     </div> <!-- end of container -->
 </div> <!-- end of action_selector -->

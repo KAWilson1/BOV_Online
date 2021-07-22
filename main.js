@@ -47,28 +47,26 @@ function create_bo_unit(active=true){
     div_row.setAttribute("class", "row");
 
     // Populate Build Order Unit (Trigger, Time, Action, Notes, Delete, Insert Below)
+    // Trigger, Time and Notes will be styled together under .bo_text
     var div_trigger = document.createElement('div');
-    div_trigger.setAttribute("class", "trigger col-xl-1");
+    div_trigger.setAttribute("class", "bo_text col-xl-1");
     var p_trigger = document.createElement('p');
     p_trigger.setAttribute("contentEditable", "true");
     p_trigger.innerHTML = "                     ";
     div_trigger.appendChild(p_trigger);
 
     var div_time = document.createElement('div');
-    div_time.setAttribute("class", "trigger col-xl-1"); // Shares styling with trigger
+    div_time.setAttribute("class", "bo_text col-xl-1"); 
     var p_time = document.createElement('p');
     p_time.setAttribute("contentEditable", "true");
     p_time.innerHTML = "                     ";
     div_time.appendChild(p_time);
 
     var div_action = document.createElement('div');
-    div_action.setAttribute("class", "action col-xl-5");
-    var p_action = document.createElement('p');
-    p_action.innerHTML = "";
-    div_action.appendChild(p_action);
+    div_action.setAttribute("class", "action col-xl-4");
 
     var div_notes = document.createElement('div');
-    div_notes.setAttribute("class", "notes col-xl-4");
+    div_notes.setAttribute("class", "bo_text col-xl-4");
     var p_notes = document.createElement('p');
     p_notes.setAttribute("contentEditable", "true");
     p_notes.innerHTML = "                     ";
@@ -78,18 +76,16 @@ function create_bo_unit(active=true){
     div_delete.setAttribute("class", "delete col-xl-1");
     div_delete.setAttribute("onclick", "delete_bo_unit(this)");
     var img_delete = document.createElement('img');
-    img_delete.height = "50";
-    img_delete.width = "50";
-    img_delete.src = "trash.png"
+    img_delete.setAttribute("class", "edit_bo_icon");
+    img_delete.src = "trash.png";
     div_delete.appendChild(img_delete);
 
     var div_insert = document.createElement('div');
     div_insert.setAttribute("class", "insert col-xl-1");
     div_insert.setAttribute("onclick", "insert_below_bo_unit(this)");
     var img_insert = document.createElement('img');
-    img_insert.height = "50";
-    img_insert.width = "50";
-    img_insert.src = "edit.png"
+    img_insert.setAttribute("class", "edit_bo_icon");
+    img_insert.src = "edit.png";
     div_insert.appendChild(img_insert);
 
     // Populate row with components of bo_unit, append the row to bo_unit
