@@ -51,8 +51,8 @@ body {
   position: fixed; /* Prevents the action_selector from moving */
   bottom: 0; /* Position the action_selector at the bottom of the page */
   width: 100%; 
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
