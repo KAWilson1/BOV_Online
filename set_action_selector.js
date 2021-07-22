@@ -1,15 +1,19 @@
-function select_race(race_button){
+function select_race(race_button = false){
+    if(race_button == false){
+        race_button = document.getElementById("terran_race_select");
+    }
+
     // Populate Action Selector depending on selected race
     var img_ele = race_button.querySelector('img');
 
     // Style active button
-    set_active_race(race_button);
+    style_active_race(race_button);
 
     // Show selected race's structures by default
     set_action_category("structure");
 }
 
-function set_active_race(active_race_button){
+function style_active_race(active_race_button){
     var img_terran = document.querySelector('#terran');
     var img_zerg = document.querySelector('#zerg');
     var img_protoss = document.querySelector('#protoss');
