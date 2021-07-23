@@ -26,6 +26,7 @@
     </div>
 </div>
 
+
 <!-- Metadata -->
 <div class="container"> 
     <div class="row">
@@ -75,7 +76,7 @@
 
 <div class="container">
     <div class="row">
-        <center><button class="btn btn-primary" onclick="add_bo_unit()" style="width:160px; margin-top:10px;">Add a Step</button></center>
+        <center><button class="btn btn-primary"  id="add_step" onclick="add_bo_unit()" style="width:160px; margin-top:10px;">Add a Step</button></center>
     </div>
     <p>&nbsp</p>
     <p>&nbsp</p>
@@ -198,10 +199,22 @@
             </div>
         </div>
         <div>
-            <center><button type="button" class="btn btn-success" onclick="export_bo()" style="margin-top:10px;">Stop Editing</button></center>
+            <center><button type="button" class="btn btn-success" onclick="stop_editing()" style="margin-top:10px;">Stop Editing</button></center>
         </div>
     </div> <!-- end of container -->
 </div> <!-- end of action_selector -->
+
+
+<div id="start_editing_menu">
+    <div class="container">
+        <div class="row" style="width:100%;">
+            <center>
+                <button type="button" class="btn btn-success" onclick="start_editing()" style="margin-top:10px;">Start Editing</button>
+            </center>
+        </div>
+    </div>
+</div>
+
 
 </body>
 </html> 
