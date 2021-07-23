@@ -54,6 +54,16 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+#start_editing_menu {
+    overflow: hidden;
+    background-color: #5F6062;
+    position: fixed; /* Prevents the action_selector from moving */
+    bottom: 0; /* Position the action_selector at the bottom of the page */
+    width: 100%; 
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: none;
+  }
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
