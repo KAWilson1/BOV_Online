@@ -1,12 +1,9 @@
-Styling
-    Add watermark ("Created by sc2bovo.com")
-Export functionality
-    For now, hiding Action Selector, insert below and delete icons will suffice
 Deployment
     Verify legal
-    Touch up images (optional)
     Website
-        Create landing page
-        Get domain
-        Get host
+        Extra pages
+            Home (landing page)
+            Donate
+            Help
+            About
         Launch site
