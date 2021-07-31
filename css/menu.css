@@ -1,18 +1,21 @@
 #menu_bar {
-    padding-top: 10px;
-    padding-bottom: 4px;
-    background-color:rgb(75,114,231);
-    margin-bottom: 15px;
+    padding-top: 5px;
+    background: rgb(34,78,150);
+    background: linear-gradient(356deg, rgba(34,78,150,1) 0%, rgba(27,91,201,1) 50%, rgba(34,78,150,1) 100%); 
+    margin-bottom: 10px;
+    border-bottom: 2px #69a1e7 solid;
 }
 
 .menu_item {
     text-align:center;
     font-size:28px;
     font-weight:700;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .menu_item a {
     color:#fff;
+    text-decoration: none;
 }
 
 #active_menu_item {
