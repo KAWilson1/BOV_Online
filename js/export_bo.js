@@ -51,6 +51,11 @@ function stop_editing(){
     var start_editing = document.getElementById("start_editing_menu");
     start_editing.style.display = "block";
 
+    // Deselect all bo_units (Removes 'active' class from all bo_units)
+    const allDivs = document.querySelectorAll('.bo_unit');
+    allDivs.forEach(function(el){
+        el.classList.remove('active');
+    });
 
 }
 
