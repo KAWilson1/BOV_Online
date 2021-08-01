@@ -5,12 +5,15 @@ body {
 }
 
 #hero {
-    margin-bottom: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 #hero_image {
-    max-height: 80%;
-    width: auto;
+    height: auto; 
+    width: auto; 
+    max-width: 600px; 
+    max-height: 300px;
 }
 
 #hero_title {
@@ -23,7 +26,35 @@ body {
 }
 
 #hero_text_container {
-    background-color: #212529;
-    border: 2px solid #69a1e7;
-    max-height: 400px;
+    max-height: 300px;
+}
+
+#question, #proof {
+    width: 100%;
+    background-color: rgb(9, 38, 78);
+    padding-top: 28px;
+    padding-bottom: 20px;
+}
+
+#question p {
+    font-size: 28px;
+}
+
+#proof p {
+    font-size: 24px;
+}
+
+#traditional_bo {
+    max-width: 400px;
+    height: auto;
+}
+
+#bovo_bo {
+    max-height: 300px;
+    width: auto;
+}
+
+#claim_text {
+    font-size: 28px;
+    padding-top: 15px;
 }
