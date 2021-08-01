@@ -1,0 +1,29 @@
+body {
+    background-color: #060c18;
+    color: #eee;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#hero {
+    margin-bottom: 0px;
+}
+
+#hero_image {
+    max-height: 80%;
+    width: auto;
+}
+
+#hero_title {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#hero_text {
+    font-size: 24px;
+}
+
+#hero_text_container {
+    background-color: #212529;
+    border: 2px solid #69a1e7;
+    max-height: 400px;
+}
