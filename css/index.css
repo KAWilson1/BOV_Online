@@ -59,3 +59,15 @@ body {
     font-size: 28px;
     padding-top: 15px;
 }
+
+.btn-primary {
+    background-color: rgb(7, 68, 151);
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+.btn-success {
+    background-color: #006734;
+    border-radius: 4px;
+    font-size: 22px;
+}
