@@ -66,7 +66,7 @@ function create_bo_unit(active=true){
     div_action.setAttribute("class", "action col-4");
 
     var div_notes = document.createElement('div');
-    div_notes.setAttribute("class", "bo_text col-4");
+    div_notes.setAttribute("class", "bo_text note_step col-4");
     var p_notes = document.createElement('p');
     p_notes.setAttribute("contentEditable", "true");
     p_notes.innerHTML = "                     ";
