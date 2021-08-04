@@ -17,9 +17,14 @@ body {
     max-height: 300px;
 }
 
+#hero_version {
+    font-size: 12px;
+}
+
 #hero_title {
     font-weight: 700;
     font-size: 32px;
+    margin-bottom: 2px;
 }
 
 #hero_text {
