@@ -85,7 +85,7 @@ function create_bo_unit(active=true){
     div_insert.setAttribute("onclick", "insert_below_bo_unit(this)");
     var img_insert = document.createElement('img');
     img_insert.setAttribute("class", "edit_bo_icon");
-    img_insert.src = "icons/edit.png";
+    img_insert.src = "icons/edit.PNG";
     div_insert.appendChild(img_insert);
 
     // Populate row with components of bo_unit, append the row to bo_unit
