@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8">
-<title>Tutorial - BOVO</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/menu.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial - BOVO</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/help.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(9, 38, 78);
+            color: #eee;
+            font-family: 'Trebuchet MS', 'Arial', 'Helvetica', sans-serif;
+        }
+    </style>
+</head>
 <!-- Menu -->
 <div class="container-fluid">
     <div class="row" id="menu_bar">
@@ -19,5 +29,17 @@
         <div class="col"><p class="menu_item" id="active_menu_item"><a href="./help.html">Help</a></p></div>
         <div class="col"><p class="menu_item"><a href="./legal.html">Legal</a></p></div>
         <div class="col">&nbsp</div>
+    </div>
+</div>
+
+<div class="container" style="margin-bottom: 20px;">
+    <div class="row">
+        <h3>How to use BOVO</h3>
+        <p>To create a Visual Build Order (VBO), select "BOVO" from the top menu. Begin by giving your Build Order a name and optionally include your name.</p>
+        <p>The menu on the bottom half of your screen is called the Action Selector. Use the buttons on the left to select your race and category of action. You use this to fill in the "Action(s)" column. Other columns can be edited by clicking in the cell and typing.</p>
+        <p>Once you have multiple steps, you'll notice that one row of your build order is lit up. This is the actively selected row and any actions selected in the Action Selector will be added to this row.</p>
+        <p>To delete an action, left click it within the Build Order.</p>
+        <p>Once you are done with your build, select "Stop Editing" and take a screenshot of your build.</p>
+        <img src="imgs/bovo_help_diagram.png">
     </div>
 </div>
