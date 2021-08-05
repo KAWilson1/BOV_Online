@@ -1,9 +1,0 @@
-Deployment
-    Verify legal
-    Website
-        Extra pages
-            Home (landing page)
-            Donate
-            Help
-            About
-        Launch site
