@@ -150,23 +150,23 @@ function set_action_category(grid_type){
     }else if (race_ele.id == "zerg"){
         if (grid_type == "structure"){
             grid_population = [
-                "hatchery.png","extractor.png","spawning_pool.png","evolution_chamber.png",
-                "roach_warren.png","baneling_nest.png","spine_crawler.png","spore_crawler.png", "lair.png",
-                "hydralisk_den.png","lurker_den.png","spire.png","infestation_pit.png","nydus_network.png",
-                "nydus_worm.png", "hive.png","greater_spire.png","ultralisk_cavern.png"
+                "hatchery.PNG","extractor.PNG","spawning_pool.PNG","evolution_chamber.PNG",
+                "roach_warren.PNG","baneling_nest.PNG","spine_crawler.PNG","spore_crawler.PNG", "lair.PNG",
+                "hydralisk_den.PNG","lurker_den.PNG","spire.PNG","infestation_pit.PNG","nydus_network.PNG",
+                "nydus_worm.PNG", "hive.PNG","greater_spire.PNG","ultralisk_cavern.PNG"
             ];
             }else if (grid_type == "unit"){
             grid_population = [
-                "drone.png","overlord.png","queen.png","empty.png","empty.png","empty.png",
+                "drone.png","overlord.PNG","queen.PNG","empty.png","empty.png","empty.png",
                 "empty.png","empty.png", "zergling.png","baneling.png","roach.png","ravager.png","hydralisk.png",
-                "lurker.png","mutalisk.png","corruptor.png", "overseer.png","droperlord.png","swarm_host.png",
+                "lurker.png","mutalisk.png","corruptor.png", "overseer.PNG","droperlord.png","swarm_host.png",
                 "infestor.png","viper.png","ultralisk.png","brood_lord.png"
             ];
             }else if (grid_type == "upgrade"){
             grid_population = [
                 "melee_attacks_level_one.gif", "missile_attacks_level_one.gif", 
                 "ground_carapace_level_one.gif", "metabolic_boost.gif", "pneumatized_carapace.gif",
-                "burrow.png", "melee_attacks_level_two.gif", "missile_attacks_level_two.gif",
+                "burrow.PNG", "melee_attacks_level_two.gif", "missile_attacks_level_two.gif",
                 "ground_carapace_level_two.gif", "flyer_attacks_level_one.gif", "flyer_carapace_level_one.gif",
                 "flyer_attacks_level_two.gif", "flyer_carapace_level_two.gif", "centrifugal_hooks.gif",
                 "glial_reconstitution.gif", "tunneling_claws.gif", "grooved_spines.png",
@@ -177,7 +177,7 @@ function set_action_category(grid_type){
                 "adrenal_glands.gif", "adaptive_talons.png", "seismic_spines.png"
             ];
         }else if (grid_type == "misc"){
-            grid_population = ["scout.png", "gas_pull_off.png", "gas_push_on.png", "inject.png", "creep.png"];
+            grid_population = ["scout.png", "gas_pull_off.png", "gas_push_on.png", "inject.PNG", "creep.PNG"];
         }
     }else{ //protoss
         if(grid_type == "structure"){
