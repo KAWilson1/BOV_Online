@@ -10,7 +10,6 @@ function stop_editing(){
     */
     var bo_container = document.querySelector('#bo_container');
 
-    
     // For every bo_unit, hide "Delete" and "Insert Below" columns
     // Widen Notes column to take up the new space
     var bo_units = bo_container.querySelectorAll('div .bo_unit');
@@ -33,8 +32,6 @@ function stop_editing(){
         } 
     }
     
-
-    
     // Remove "Delete" and "Insert Below" headers and widen Notes Header
     var bo_headers = bo_container.querySelector("#bo_headers");
     var bo_header_row = bo_headers.querySelector(".row");
@@ -45,8 +42,6 @@ function stop_editing(){
     notes_header.classList.remove("col-4");
     notes_header.classList.add("col-6");
     
-    
-
     // Hide Action Selector
     var action_selector = document.querySelector(".action_selector");
     action_selector.style.display = "none";
@@ -100,12 +95,6 @@ function start_editing(){
     notes_header.classList.remove("col-6");
     notes_header.classList.add("col-4");
     
-
-
-
-
-
-    
     // For every bo_unit, display "Delete" and "Insert Below" columns
     var bo_units = bo_container.querySelectorAll('div .bo_unit');
     for(var i = 0; i < bo_units.length; i++){
@@ -127,8 +116,6 @@ function start_editing(){
             console.log(err.message);
         } 
     }
-
-    
 
     //Display Add a Step
     var add_a_step = document.getElementById("add_step");

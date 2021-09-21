@@ -1,3 +1,5 @@
+// Purpose: Handles adding rows and actions to build order display
+
 function add_action(image_container_element){
     // Adds action to individual bo_unit's action section
     // Works via copying the image of image_container_element and appending it to the bo_unit
@@ -5,12 +7,12 @@ function add_action(image_container_element){
     var active_row = active_unit.querySelector('.row');
     var active_action = active_row.querySelector('.action');
 
-    var img_test = document.createElement('img');
-    img_test.setAttribute("onclick", "delete_action(this)");
-    img_test.src = image_container_element.querySelector('img').src
-    img_test.height = "70";
-    img_test.width = "70";
-    active_action.appendChild(img_test);
+    var img_selected_action = document.createElement('img');
+    img_selected_action.setAttribute("onclick", "delete_action(this)");
+    img_selected_action.src = image_container_element.querySelector('img').src
+    img_selected_action.height = "70";
+    img_selected_action.width = "70";
+    active_action.appendChild(img_selected_action);
 
     // If the action was the first action in the bo_unit and the bo_unit is the last item in bo_container
     // Add another bo_unit (to prevent constantly clicking + Step button)
@@ -24,9 +26,13 @@ function add_action(image_container_element){
         if (last_bo_unit.id == active_unit.id){
             add_bo_unit(active=false);
         }
-
     }
 } 
+
+function delete_action(action_to_delete){
+    action_to_delete.remove();
+}
+
 function add_bo_unit(active=true){
     // Creates blank bo_unit and appends it to the bo_container
     div_bo_unit = create_bo_unit(active);
@@ -115,10 +121,6 @@ function set_active_bo_unit(active_unit){
         });
         active_unit.classList.add('active');
     }
-}
-
-function delete_action(action_to_delete){
-    action_to_delete.remove();
 }
 
 function delete_bo_unit(unit_to_delete){

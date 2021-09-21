@@ -1,3 +1,5 @@
+// Purpose: Handles changing the images within the action selector
+
 function select_race(race_button = false){
     if(race_button == false){
         race_button = document.getElementById("terran_race_select");
